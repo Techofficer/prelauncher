@@ -1,0 +1,124 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import "bootstrap";
+@import "font-awesome";
+
+form .form-group label {
+    color: #271B1B;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.btn-default:hover{
+  background-color: none;
+}
+
+
+.alert{
+  margin-bottom: 0px;
+  text-align: center;
+  z-index: 1000;
+  position: relative;
+}
+
+.alert.alert-success{
+  color: white;
+  background: #3ed37d;
+  border: none;
+  border-radius: 0;
+}
+
+.alert.alert-danger{
+  color: white;
+  background: #e74c3c;
+  border: none;
+  border-radius: 0;  
+}
+
+html {
+  position: relative;
+  height:100%;
+}
+
+body {
+  height:100%;
+  min-height: 100%;
+  font-size: 14px;
+  margin: 0;
+  font: 14px "open sans", Helvetica, Arial, sans-serif;
+}
+
+a:link, a:visited, a:active, a:focus{
+  outline: none !important;
+  text-decoration: none !important;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+form .form-control {
+    min-height: 40px;
+    background-color: #F3F3F3;
+    border-radius: 0px;
+    color: #3E3E3E;
+    box-shadow: none;
+    padding: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.btn-def, .btn-def:visited {
+    background: #4EC9ED none repeat scroll 0% 0%;
+    border: medium none;
+    text-transform: uppercase;
+    min-width: 150px;
+    border-radius: 0px;
+    color: #FFF;
+    min-height: 38px;
+    text-align: center;
+}
+
+.btn-def:hover, .btn-def:focus {
+    background: #83D9F2 none repeat scroll 0% 0%;
+    border: medium none;
+    color: #FFF;
+}
+
+.section-title h1{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 36px;
+	color: #000;
+	margin: 50px auto;
+	text-align: center;
+}

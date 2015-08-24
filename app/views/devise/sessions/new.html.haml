@@ -1,0 +1,29 @@
+
+.centered-content
+	.container
+		%header.page-head
+			.row
+				.col-md-12.text-center
+					.section-title
+						%h1 Log in
+	%section
+		.container
+			.row
+				.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+					= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| 
+						= f.error_notification
+
+						- cache do
+							.form-group
+								%label 
+									Email
+									%span.required  *
+								= f.input :email, required: false, autofocus: true, label: false, as: :email, input_html: {required: true}
+
+
+							.form-group
+								%label 
+									Password
+									%span.required  *
+								= f.input :password, required: false, label: false, input_html: {required: true}
+							= f.button :submit, "Log in", class: "btn btn-default btn-lg btn-def"

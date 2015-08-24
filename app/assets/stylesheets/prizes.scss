@@ -1,0 +1,96 @@
+#prizes {
+    border-top: 5px solid #E9E9E9;
+    position: relative;
+	margin: 100px 70px;
+	color: #333;
+	font-family: Lato;
+}
+
+.progressbar {
+    height: 5px;
+    top: -5px;
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    z-index: 100;
+    background: #2ECC71 none repeat scroll 0% 0%;
+}
+
+#prizes .prize {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#prizes .prize-number {
+    background-color: #E9E9E9;
+    color: inherit;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    left: calc(50% - 15px);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#prizes .prize-name {
+    text-align: center;
+    font-size: 16px;
+    color: inherit;
+}
+
+
+#prizes .active-prize .prize-name{
+    color: #2ecc71;
+}
+
+#prizes .active-prize .prize-number{
+    background: #2ecc71;
+    color: white;
+}
+
+
+#prizes img{
+    border: 3px solid #E9E9E9;
+    top: -330px;
+    position: absolute;
+    display: none;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#prizes .prize:hover img{
+    display: block;
+}
+
+#footer {
+    width: 100%;
+    bottom: 0px;
+    margin-top: 60px;
+	margin-bottom: 20px;
+	height: auto;
+	text-align: center;
+}
+
+#footer p{
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    font-family: Lato;
+    width: auto;
+    text-transform: none;
+}
+
+#footer a{
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+    font-family: Lato;
+}

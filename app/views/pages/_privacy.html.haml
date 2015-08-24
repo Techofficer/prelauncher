@@ -1,0 +1,13 @@
+#myModal.modal.fade.form{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+	.modal-dialog.small-modal#additional_info
+		.modal-content    
+			.modal-body
+				%button.close{"data-dismiss" => "modal", "aria-hidden" => "true" } ×
+				.row
+					.col-md-10.col-md-offset-1.text-center
+						%h3 Privacy Policy
+					.col-md-12
+						Privacy
+
+:javascript
+	$('#myModal').on('hidden.bs.modal', function () {$("#myModal").remove();});

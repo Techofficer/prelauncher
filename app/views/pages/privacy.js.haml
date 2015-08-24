@@ -1,0 +1,4 @@
+$('body').append('#{escape_javascript(render partial: 'privacy')}');
+$('#myModal').modal('show');
+
+$('#myModal').on('hidden.bs.modal', function () {$("#myModal").remove();});

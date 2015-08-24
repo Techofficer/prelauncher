@@ -1,0 +1,198 @@
+#main{
+	height: 100vh;
+	position: fixed;
+	background: asset-url("morgan_first.jpg");
+	top: 0;
+	width: 100%;
+	display: table;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.cover {
+	width: 600px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.cover-heading {
+	font-size: 50px;
+	font-size: 4vw;
+	font-family: ProximaNova;
+	font-weight: 700;
+	color: black;
+	letter-spacing: 1px;
+}
+
+#form-wrapper {
+	margin-top: 30px;
+}
+
+#new_user{
+	width: 450px;
+	display: inline-block;
+}
+
+#new_user input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #666;
+}
+#new_user input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #666;
+   opacity:  1;
+}
+#new_user input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #666;
+   opacity:  1;
+}
+#new_user input:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #666;
+}
+
+#new_user .form-group{
+	float: left;
+}
+
+#new_user input{
+	border-radius: 0;
+	height: 55px;
+	border-radius: 0px;
+	width: 100%;
+	font-size: 18px;
+	line-height: 1.2;
+	font-size: 24px;
+	line-height: 1.2;
+	font-family: FreightBigBook;
+}
+
+#new_user .user_email {
+	margin-right: -4px;
+	width: 70%;
+}
+
+
+#new_user .submit {
+	width: 30%;
+}
+
+#refer p{
+	font-family: ProximaNova;
+	padding: 0 2px;
+}
+
+
+#refer figcaption p{
+	font-size: 1.4vw;
+}
+
+#refer h1{
+	font-size: 43px;
+	font-size: 3vw;
+	font-family: ProximaNova;
+	font-weight: 700;
+	color: #000;
+	letter-spacing: 1px;
+	line-height: 1.15;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+#refer aside{
+	width: 160px;
+	margin: 0px auto;
+}
+
+#refer h2{
+	font-size: 24px;
+	font-size: 2.1vw;
+	font-family: FreightBigBook;
+	color: #000;
+	padding: 30px 0px 0px;
+	margin-top: 0;
+	border-top: 2px solid #000;
+}
+
+#refer p {
+    font-family: FreightBigBook;
+    font-weight: 400;
+    font-size: 21px;
+    font-size: 1.5vw;
+    line-height: 1.2;
+    color: black;
+}
+
+#sharing {
+    width: 270px;
+    margin: 0px auto;
+}
+
+
+#refer input{
+	height: 35px;
+	border-radius: 0px;
+	font-size: 21px;
+	line-height: 35px;
+	font-family: FreightBigBook;
+	border-color: #000;
+	color: #000;
+	width: 85%;
+	margin: 15px auto 0px;
+	text-align: center;
+}
+
+#refer h2 span{
+	font-size: 16px;
+	color: black;
+}
+
+#refer p.small{
+	font-size: 16px;
+}
+
+.contact-socials {
+	width: 240px;
+	margin: 15px auto 10px;
+}
+
+.contact-socials li {
+    margin: 0px 15px;
+    float: left;
+    transition: all 250ms ease-in-out 0s;
+    border-radius: 5px;
+	width: 50px;
+	height: 3.1vw;
+	text-align: center;
+}
+
+.contact-socials i.fa{
+	font-size: 3vw;
+}
+
+.ico-facebook{
+	color: #3B5998;
+}
+
+.ico-facebook:hover, .ico-facebook:focus{
+	color: #3B5998;
+	opacity: 0.8;
+}
+
+.ico-twitter{
+	color: #00A9ED;
+}
+
+.ico-twitter:hover, .ico-twitter:focus{
+	color: #00A9ED;
+	opacity: 0.8;
+}
+
+.ico-mail{
+	color: #25A3DC;
+}
+
+.ico-mail:hover, .ico-mail:focus{
+color: #25A3DC;
+	opacity: 0.8;
+}

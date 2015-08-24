@@ -1,0 +1,33 @@
+= simple_form_for @setting, :html => {novalidate: false} do |f| 
+
+	%legend Images
+	.form-group.form-group-sm
+		.col-sm-4
+			= f.input :cover_image, as: :file, label: "Cover image"
+	.form-group.form-group-sm
+		.col-sm-4
+			= f.input :additional_image, as: :file, label: "Additional image"
+
+
+	%legend Twitter		
+	.form-group.form-group-sm
+		.col-sm-4
+			= f.input :twitter_message, as: :string, label: "Message", placeholder: "Message", required: false
+	%legend Facebook
+	.form-group.form-group-sm
+		.col-sm-4
+			= f.input :facebook_message, as: :string, label: "Message", placeholder: "Message", required: false
+			= f.input :facebook_title, as: :string, label: "Title", placeholder: "Title", required: false
+			= f.input :facebook_image, as: :file, label: "Facebook image"
+	%legend Email
+	.form-group.form-group-sm
+		.col-sm-4
+			= f.input :email_subject, as: :string, label: "Subject", placeholder: "Subject", required: false
+			= f.input :email_message, as: :text, label: "Message", placeholder: "Message", required: false
+
+		
+
+	%legend Save settings
+	.col-md-12
+		.form-group
+			= f.button :submit,"save", class: "btn btn-default btn-lg btn-def"

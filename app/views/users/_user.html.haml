@@ -1,0 +1,10 @@
+%tr
+	%td= user.id
+	%td= user.created_at.strftime("%B %d, %Y")
+	%td= link_to user.email, user_path(user.referral_code)
+	%td= user.ip_address
+	%td= user.referrer_id || "No"
+	%td= user.referrals.count
+	%td= user.prize ? user.prize_name : "No prize"
+	%td
+		= link_to "Delete", user_path(user.referral_code), method: :delete, class: "btn btn-default btn-branded"

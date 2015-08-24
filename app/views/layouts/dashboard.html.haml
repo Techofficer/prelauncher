@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title Admin panel
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    
+  %body
+    #content_wrapper
+      - if flash[:notice]
+        .alert.alert-success{role: "alert"}
+          = flash[:notice]
+      - if flash[:alert]
+        .alert.alert-danger{role: "alert"}
+          = flash[:alert]
+      #admin-panel
+        #admin-sidebar
+          = render "layouts/dashboard_sidebar"
+        #admin-content
+          %header
+            .container-fluid   
+              .row
+                .col-md-12
+                  %h1 Users / All
+          %section
+            .container-fluid
+              .row
+                .col-md-12  
+                  = yield

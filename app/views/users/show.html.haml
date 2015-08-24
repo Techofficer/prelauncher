@@ -1,0 +1,36 @@
+#refer{style: "background: url(#{asset_url(Setting.additional_image.url)});"}
+	.col-md-5.col-md-offset-1.col-sm-6.hidden-xs.refer-left
+	.col-md-5.col-sm-6.col-xs-12
+		#copy
+			%h3 Don't leave your friends behind 
+			%h1 Invite friends & Earn product
+
+		%input.form-control{value: "#{@user.referral_url(root_url)}"}
+		%p Share your unique link via emails or social networks and earn prizes for each friend who sign up.
+
+		#social-sharing
+			%ul.contact-socials.clearfix
+				%li
+					%a.foo_social.ico-facebook{:href => "https://www.facebook.com/sharer/sharer.php?u=#{@user.referral_url(root_url)}&title=Morgans", target: "_blank"}
+						%i.fa.fa-facebook-official 
+				%li
+					%a.foo_social.ico-twitter{:href => "https://twitter.com/intent/tweet?text=#{URI.escape(Setting.sharing[:twitter_message])}&url=#{@user.referral_url(root_url)}", target: "_blank"}
+						%i.fa.fa-twitter
+				%li
+					%a.foo_social.ico-mail{:href => "mailto:?&subject=#{Setting.sharing[:email_subject]}&body=#{Setting.sharing[:email_message] + " " + @user.referral_url(root_url)}", target: "_blank"}
+						%i.fa.fa-envelope
+
+
+%aside.text-center
+	%h4
+		%strong= pluralize(@user.number_of_referrals, 'friend')
+		%span have joined so far. 
+
+- if Prize.all.any?
+	%section#prizes
+		.progressbar{style: "width: #{@user.progress * 100}%"}
+		= render partial: "prizes/prize_item", collection: Prize.all.order("number_of_referrals asc"), as: :prize
+
+%footer#footer
+	%p All rights reserved 
+	= link_to "Privacy Policy", privacy_path, remote: true

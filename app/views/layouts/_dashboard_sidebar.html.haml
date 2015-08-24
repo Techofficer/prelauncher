@@ -1,0 +1,73 @@
+#sidebar-header
+	Admin panel
+
+%section.sidebar-nav#users-section
+	%h3
+		Users
+		%i.fa.fa-close
+	%ul
+
+		%li
+			%a{href: "#{users_path}"} 
+				All users
+				%span.count= User.all.count
+
+
+		%li
+			%a{href: "#{users_path(format: :csv)}"} 
+				Download CSV
+
+
+%section.sidebar-nav#prize-parts-section
+	%h3 
+		Prizes
+		%i.fa.fa-close
+	%ul
+		%li
+			%a{href: "#{prizes_path}"} 
+				All prizes
+				%span.count= Prize.all.count
+
+		%li
+			%a{href: "#{new_prize_path}"} 
+				New prize
+
+
+%section.sidebar-nav#prize-parts-section
+	%a{href: "#{settings_path}"} 
+		%h3 
+			Settings
+
+
+%section.sidebar-nav
+	%a{href: "#{destroy_admin_session_path}", "data-method" => "delete"}
+		%h3 
+			Exit
+
+:javascript
+	$(document).ready(function(){
+		var selector = '#admin-sidebar [href="' + window.location.pathname + '"]';
+		var item = $(selector);
+
+		if (item.length > 0){
+			item.closest("section").addClass("active");
+			item.closest("li").addClass("selected");
+			var title = item.closest("section").find("h3").text() + " / " +  item.contents().get(0).nodeValue
+			$("#admin-content header h1").html(title);		
+		}
+
+		$(".sidebar-nav h3").on("click touchstart", function(e){
+
+			if ($(this).parent().hasClass("active")){
+				$(".sidebar-nav").removeClass("active");
+			} else {
+				$(".sidebar-nav").removeClass("active");
+				$(this).parent().addClass("active");
+			}
+		});
+
+		$(".sidebar-nav a").on("click touchstart", function(e){
+			$(".sidebar-nav a").parent().removeClass("selected");
+			$(this).parent().addClass("selected");
+		});	
+	});

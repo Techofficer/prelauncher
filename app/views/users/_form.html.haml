@@ -1,0 +1,4 @@
+= simple_form_for @user, html: {novalidate: false, class: "form-inline"} do |f|
+	= f.input :email, as: :email, label: false, placeholder: "Enter Email", input_html: {required: true }
+	.form-group.submit
+		= f.button :submit, "STEP INSIDE", class: "btn btn-branded"

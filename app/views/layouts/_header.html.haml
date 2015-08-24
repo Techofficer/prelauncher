@@ -1,0 +1,10 @@
+- if flash[:notice]
+	.alert.alert-success{role: "alert"}
+		= flash[:notice]
+- if flash[:alert]
+	.alert.alert-danger{role: "alert"}
+		= flash[:alert]
+.navbar.overlay
+	.container.text-center		
+		%a.navbar-brand{href: "#{root_path}"}
+			= image_tag("logo.png", height: 71, width: 200)

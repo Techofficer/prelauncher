@@ -1,0 +1,9 @@
+- achieved = @user.achieved(prize)
+
+.prize{style: "width: #{100.fdiv(Prize.all.count)}%;", class: "prize #{'active-prize' if achieved}"}
+	%span.prize-number= prize.number_of_referrals
+	%p.prize-name
+		= prize.name
+
+	- if prize.image.present?
+		= image_tag(prize.image.url, width: 190, height: 250, style: "top: -330px")

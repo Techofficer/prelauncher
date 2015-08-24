@@ -1,0 +1,258 @@
+
+
+#admin-panel {
+    padding: 0px;
+    min-height: 100%;
+    display: inline-block;
+    width: 100%;
+}
+
+#admin-sidebar {
+    width: 15%;
+    left: 0px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    background: #293541 none repeat scroll 0% 0%;
+    position: fixed;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 1000;
+}
+
+#sidebar-header {
+    height: 80px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0px 20px;
+    color: #FFF;
+    background: #4EC9ED none repeat scroll 0% 0%;
+    overflow: hidden;
+}
+
+#sidebar-header a, #sidebar-header a:visited{
+    color: #FFF;
+}
+
+#sidebar-header a:hover, #sidebar-header a:focus{
+    color: #FFF;
+}
+
+
+.sidebar-nav {
+    padding-left: 20px;
+    border-width: 1px medium;
+    border-style: solid none;
+    border-color: transparent #34404C #34404C;
+}
+
+.sidebar-nav h3 {
+    color: #FFF;
+    height: 50px;
+    border-image: none;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    line-height: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0px;
+    font-size: 14.4px;
+}
+
+.sidebar-nav ul {
+    display: none;
+    width: 100%;
+}
+
+.sidebar-nav.active ul, .sidebar-nav.active .fa-close {
+    display: inline-block;
+}
+
+.sidebar-nav li {
+    clear: both;
+    position: relative;
+    font-size: 14.4px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sidebar-nav li:hover a, .sidebar-nav li:hover span, .sidebar-nav li.selected a, .sidebar-nav li.selected span {
+    color: #4EC9ED;
+}
+
+.sidebar-nav li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease-out 0s;
+    text-decoration: none;
+    float: left;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+    text-transform: capitalize;
+    font-family: arial;
+}
+
+.sidebar-nav li:hover a, .sidebar-nav li:hover span, .sidebar-nav li.selected a, .sidebar-nav li.selected span {
+    color: #4EC9ED;
+}
+
+.sidebar-nav li .count {
+    box-sizing: border-box;
+    transition: all 0.2s ease-out 0s;
+    width: 40px;
+    line-height: 28px;
+    font-size: 0.9em;
+    position: absolute;
+    right: 12px;
+    text-align: right;
+    color: #9B9B9B;
+    font-weight: normal;
+    opacity: 1;
+}
+
+.sidebar-nav .fa-close {
+    transition: all 0.2s ease-out 0s;
+    line-height: 50px;
+    position: absolute;
+    right: 12px;
+    display: none;
+}
+
+#admin-content h4 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#admin-content h4 .btn{
+    float: right;
+    font-weight: 600;
+}
+
+#admin-content .table th {
+    font-weight: 600;
+    color: #FFF;
+    background: #2ECC71 none repeat scroll 0% 0%;
+    border-bottom: medium none !important;
+    text-transform: uppercase;
+    height: 35px;
+    line-height: 35px;
+}
+
+#admin-content {
+    width: 85%;
+    padding: 0px;
+    float: right;
+    max-width: calc(100% - 60px);
+}
+
+#admin-content header {
+    padding-top: 20px;
+    height: 81px;
+    background: #FFF none repeat scroll 0% 0%;
+    border-bottom: 1px solid #DDD;
+}
+
+#admin-content header h1 {
+    color: #5C5E68;
+    font-weight: 200;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+#admin-content > section {
+    padding: 30px 0px;
+}
+
+#admin-panel .container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.form-group-sm {
+    padding: 0px 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+div.form-group-sm .form-control {
+    border-radius: 0px;
+}
+
+.form-group-sm .form-control {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: #F3F3F3;
+    border-radius: 3px;
+     color: #3E3E3E;
+     box-shadow: none;
+}
+
+.dashboard-nav{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: -5px;
+    background: #F7F8FA none repeat scroll 0% 0%;
+}
+
+.top-dashboard{
+    height: 50px;
+    position: relative;
+}
+
+.top-dashboard .nav-tabs {
+    bottom: 0px;
+    position: absolute;
+    border: medium none;
+}
+
+.top-dashboard .nav-tabs li {
+    margin-right: 20px;
+}
+
+.top-dashboard .nav-tabs li.active {
+    border-bottom: 5px solid #4EC9ED;
+}
+
+.delete-object{
+    color: #333;
+}
+
+.delete-object:hover, .delete-object:focus{
+    color: #e74c3c;
+}
+
+#admin-panel .tabpanel {
+    margin-left: -25px;
+    margin-top: -30px;
+    margin-right: -25px;
+}
+
+.form-group-sm .form-control{
+    min-height: 30px;
+}
+
+#admin-content .field-description label{
+    font-weight: normal;
+    display: block;
+    font-size: 16px;
+    margin: 0px 0px 10px;
+    padding: 0px;
+}
+
+
+

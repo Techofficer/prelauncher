@@ -1,0 +1,8 @@
+%tr
+	%td= prize.name
+	%td= pluralize(prize.number_of_referrals, "friend")
+	%td= pluralize(prize.number_of_winners, "person")
+	%td
+		.btn-group.btn-group-sm
+			= link_to "Edit", edit_prize_path(prize), class: "btn btn-default btn-branded"
+			= link_to "Delete", prize, method: :delete, class: "btn btn-default btn-branded"
