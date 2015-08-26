@@ -32,3 +32,34 @@ $ rails s
 - Go to localhost:3000/admins/sign_in and log in with Admin user credentials
 - Set the different prize levels and add social messages in control panel
 - Run rake secret to generate a new Rails secret_token and set it in /config/intializers/secret_token.rb (or in the RAILS_SECRET environment variable).
+
+## Contributing
+If you'd like to contribute a feature or tests: Thanks! Post a [pull request](https://github.com/Techofficer/prelauncher/compare/).
+
+If you discover any bugs, feel free to [create an issue](https://github.com/Techofficer/prelauncher/issues) on GitHub. Please add as much information as possible to help us fixing the possible bug. We also encourage you to help even more by forking and sending us a pull request.
+
+## License
+MIT License. Copyright 2015 Techofficer. http://techofficer.co
+
+You are not granted rights or licenses to the trademarks of the Techofficer, including without limitation the Prelauncher name or logo.
+
+## Advanced Prelaunch Website
+![Prelauncher](http://prelauncher.info/prelauncher-black.png)
+
+If you do not have programming skills, or you want some advanced features for your Prelaunch referral website, visit [Prelauncher.info](http://prelauncher.info) - prelaunch website builder which helps pwners of new e-commerce websites to easily build a viral pre-launch website and start referral prelaunch campaign.
+### Simple Web page builder
+Build a simple two-page microsite with our beautiful website builder, no coding skills needed! Choose a layout, begin customizing and be online in a couple of minutes! Take a look at [examples](http://prelauncher.info/examples) of prelaunch websites created with our website builder.  
+### Integrations
+We offer simple integrations with 3 types of online services: Email Marketing Tools (Mailchimp, Constant Contact, and Aweber), Analytical Tools (Google Analytics or Segment), and Link Shortners (Bitly, Google Shortener).
+### Other features configured in control panel
+- confirmation emails
+- search engine optimization
+- automated emails sent to users once they hit a new milestone
+- social sharing in Linkedin, Facebook, Twitter, Email
+- custom domains and hosting on our server
+- analytics and users' profiles
+- ask users for additional data (name, phone number, shipping address, avatar)
+### Custom development
+[Contact us](http://prelauncher.info/contact) if you need custom features, integrations, or design for your Prelaunch website.
+
+

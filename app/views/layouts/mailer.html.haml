@@ -1,0 +1,48 @@
+%div{style: "min-width: 100%;font-weight: normal;margin: 0px;font-size: 14px;line-height: 19px;background-color: #F5F3F0;padding: 0px;font-family: helvetica,arial,sans-serif; color: #464646;width: 100% !important;"}
+  %table{style: "border-spacing: 0px;border-collapse: collapse;vertical-align: top;padding: 0px;width: 100%;font-weight: normal;height: 100%;margin: 0px;font-size: 14px;background-color: #F5F3F0;color: #464646;line-height: 1.3;"}
+    %tbody
+      %tr{style: "padding: 0px;vertical-align: top;"}
+        %td{style: "-moz-hyphens: auto;vertical-align: top;font-size: 14px;line-height: 1.3;margin: 0px;font-weight: normal;color: #FFF;padding-top: 0px;padding-bottom: 0px;padding-left: 0px;border-collapse: collapse !important;padding-right: 0px !important;"}
+          %table{style: "border-spacing: 0px;border-collapse: collapse;padding: 0px;vertical-align: top;margin: 0px auto;width: 520px;color: #FFF;"}
+            %tbody
+              %tr{style: "padding: 0px;vertical-align: top;color: #FFF;"}
+                %td{style: "-moz-hyphens: auto;vertical-align: top;font-weight: normal;margin: 0px;line-height: 1.3;font-size: 14px;padding: 27px 0px 5px;text-align: center;color: #FFF;border-collapse: collapse !important;"}
+                  %center{style: "width: 520px;color: #FFF;min-width: 520px;"}
+                    %h1{style: "padding: 0px;margin: 0px;line-height: 1.3;font-size: 18px;font-weight: normal;word-break: normal;color: #FFF;"}
+                      %a{href: "#{root_url}", target: "_blank", style: "height: 55px;display: block;width: 200px;" } 
+                        %img{src: "#{root_url + 'logo.png'}", alt: "Prelauncher", style: "height: auto;display: block;width: 170px;" }
+          %table{style: "width: 520px;margin: 10px auto;"}
+            %tbody
+              %tr{:style => "padding:0;vertical-align:top"}
+                %td{:style => "word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertical-align: top; font-size: 14px; line-height: 1.3; margin: 0; font-weight: normal; color: rgb(34, 34, 34); padding: 0 20px 0px 0px; font-family: open sans open-sans helvetica neue helvetica arial sans-serif !important; border-collapse: collapse !important; padding-right: 0px !important"}
+                  %table{:style => "border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;margin:0 auto;width:95%"}
+                    %tbody
+                      %tr{:style => "padding:0;vertical-align:top;background: white !important;"}
+                        %td{:style => "word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;font-weight:normal;color:#464646;margin:0;font-size:14px;line-height:19px;padding-top:40px;padding:30px;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important;border-collapse:collapse !important"}
+                          %div
+                            %table{:style => "border-spacing:0;border-collapse:collapse;vertical-align:top;padding:0;width:100%"}
+                              %tbody
+                                %tr{:style => "padding:0;vertical-align:top;"}
+                                  %td{:style => "word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;font-size:14px;color:#222222;line-height:1.3;font-weight:normal;padding:0;margin:0;min-width:0px;padding-bottom:15px;padding-right:10px;width:50%;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important;border-collapse:collapse !important"}
+                                    %h2{:style => "padding:0;margin:0;word-break:normal;font-size:18px;font-weight:300;line-height:1.4;color:#464646;margin-top:0;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important"} Hello!
+                                  %td{:style => "word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;line-height:1.3;margin:0;padding:0;font-weight:normal;padding-top:5px;font-size:14px;color:#afbabf;min-width:0px;padding-bottom:15px;width:50%;border-collapse:collapse !important;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important;text-align:right !important;padding-right:0px !important"} 
+                                  %td{:style => "word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;font-size:14px;color:#222222;line-height:1.3;font-weight:normal;margin:0;visibility:hidden;width:0px;padding-bottom:15px;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important;border-collapse:collapse !important;padding:0 !important"}
+                            %p{:style => "font-weight:normal;padding:0;margin:0;margin-bottom:10px;color:#464646;line-height:1.7;font-size:14px;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important"} 
+                              = yield
+                            %p{:style => "font-weight:normal;padding:0;margin:0;color:#464646;line-height:1.7;font-size:14px;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important;margin-bottom:0px !important"}
+                              Thanks,
+                              %br/
+                              %strong{:style => "font-weight:600"} Prelauncher
+                          %table{:style => "border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top"}
+                            %tbody
+                              %tr{:style => "padding:0;vertical-align:top"}
+                                %td{:style => "word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;font-weight:normal;color:#464646;margin:0;font-size:14px;line-height:19px;padding:0;border-bottom:1px solid #d5e0e5;padding-bottom:24px;padding-top:40px;border-collapse:collapse !important;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important"}
+                                  %p{:style => "font-weight:normal;padding:0;margin:0;font-size:14px;line-height:19px;color:#afbabf;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important;margin-bottom:0px !important"} 
+                                    This is automatically generated message, please do not reply! You can contact us by this email: contact@prelauncher.info                              
+                              %tr{:style => "padding:0;vertical-align:top"}
+                                %td{:style => "word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;font-weight:normal;color:#464646;margin:0;font-size:14px;line-height:19px;padding:0;padding-bottom:4px;padding-top:24px;border-collapse:collapse !important;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important"}
+                                  %p{:style => "font-weight:normal;padding:0;margin:0;margin-bottom:10px;line-height:1.7;font-size:14px;color:#afbabf;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important"}
+                                    %strong{:style => "font-weight:600"} Check your prize at this URL:
+                                  %p{:style => "font-weight:normal;padding:0;margin:0;font-size:14px;line-height:19px;color:#afbabf;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important;margin-bottom:0px !important"}
+                                    %a{:href => "#{@user.user_url(root_url)}", :target => "_blank"}= @user.user_url(root_url)
+                        %td{:style => "word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;font-size:14px;line-height:1.3;font-weight:normal;margin:0;color:#222222;visibility:hidden;width:0px;font-family:open sans, open-sans, helvetica neue, helvetica, arial, sans-serif !important;border-collapse:collapse !important;padding:0 !important"}
