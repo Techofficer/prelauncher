@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     #validates :ip_address, presence: true, uniqueness: true
 
     before_create :set_referral_code
-
+    after_create :welcome_email
 
     def prize
     	Prize.where(number_of_referrals: 0..number_of_referrals).order("number_of_referrals asc").last
@@ -48,6 +48,10 @@ class User < ActiveRecord::Base
         referrals.count
     end
 
+    def user_url(root_url)
+        root_url + "users/" + referral_code
+    end
+
     def referral_url(root_url)
         root_url + "?ref=" + referral_code
     end
@@ -78,6 +82,10 @@ class User < ActiveRecord::Base
 	      code = SecureRandom.hex(5)
 	      break code unless self.class.where(referral_code: code).exists?
 	    end
+    end
+
+    def welcome_email
+        UserMailer.delay.signup_email(self)
     end
 
 end

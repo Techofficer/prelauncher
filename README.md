@@ -18,6 +18,7 @@ Welcome emails are sent to users after they submit email addresses.
 - Control panel where you can dynamically add/edit/delete prizes and images.
 - Ability to modify social messages in control panel.
 - Ability to upload list of users in CSV format in control panel.
+- Haml is used as the templating engine.
 
 ## Installation
 ```sh
