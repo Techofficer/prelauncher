@@ -1,6 +1,5 @@
 language: ruby
-rvm:
-  - 2.1.2p95
+
 
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
