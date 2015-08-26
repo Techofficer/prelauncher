@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Techofficer/prelauncher.svg?branch=master)](https://travis-ci.org/Techofficer/prelauncher)
+
 # PRELAUNCHER
 
 Rails 4 version of Harry's prelaunchr with updated design, comfortable control panel, and other new features. Based on https://github.com/harrystech/prelaunchr and discussed in greater detail on [Tim Ferriss'](http://fourhourworkweek.com/2014/07/21/harrys-prelaunchr-email/) blog.
