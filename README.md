@@ -59,7 +59,8 @@ We offer simple integrations with 3 types of online services: Email Marketing To
 - custom domains and hosting on our server
 - analytics and users' profiles
 - ask users for additional data (name, phone number, shipping address, avatar)
-### Custom development
+
+## Custom development
 [Contact us](http://prelauncher.info/contact) if you need custom features, integrations, or design for your Prelaunch website.
 
 
