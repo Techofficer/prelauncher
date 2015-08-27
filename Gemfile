@@ -29,7 +29,7 @@ gem 'simple_form'
 gem 'devise'
 
 gem 'unicorn'
-
+gem 'rack-timeout'
 
 gem 'delayed_job_active_record'
 
