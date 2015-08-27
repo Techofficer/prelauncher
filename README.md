@@ -57,7 +57,7 @@ We offer simple integrations with 3 types of online services: Email Marketing To
 - confirmation emails
 - search engine optimization
 - automated emails sent to users once they hit a new milestone
-- social sharing in Linkedin, Facebook, Twitter, Email
+- social sharing in Linkedin, Google+, Facebook, Twitter, Email
 - custom domains and hosting on our server
 - analytics and users' profiles
 - ask users for additional data (name, phone number, shipping address, avatar)

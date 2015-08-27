@@ -36,7 +36,7 @@
 	color: #FFF;
 	font-weight: 400;
 	font-family: Lato;
-	width: 600px;
+	max-width: 600px;
 	text-align: center;
 	margin: 50px auto;
 	text-transform: none;
@@ -50,11 +50,15 @@
 	border: medium none;
 }
 
+#new_user .form-group{
+	display: inline-block;
+}
+
 #new_user .form-control{
 	height: 45px;
 	border-radius: 0px;
 	font-size: 18px;
-	width: auto;
+	width: 100%;
 	float: left;
 	display: inline-block;	
 }
@@ -64,7 +68,7 @@
     border-radius: 0px;
     font-size: 18px;
     font-weight: 600;
-    width: auto;
+    width: 100%;
     background-color: #4EC9ED;
     color: #FFF;
     font-family: Lato;
@@ -154,7 +158,6 @@
     padding: 0px 15px;
     float: left;
     transition: all 250ms ease-in-out 0s;
-    height: 3.1vw;
     text-align: center;
     border-right: 1px solid white;
 }
@@ -173,7 +176,7 @@
 }
 
 .contact-socials i.fa {
-    font-size: 3vw;
+    font-size: 30px
 }
 
 .ico-twitter {
@@ -202,4 +205,293 @@ aside h4{
     margin-top: 0px;
     margin-bottom: 0px;
     text-transform: none;
+}
+
+
+
+
+@media screen and (max-width: 980px){
+
+
+  #refer article p.small {
+    display: none;
+  }
+
+  #refer figcaption {
+    display: block;
+  }
+
+
+    #refer input {
+      height: 30px;
+      font-size: 19px;
+      margin-top: 10px;
+      line-height: 30px;
+    }
+
+    #refer figcaption{
+      margin-top: 10px;
+    }
+
+
+    #refer h2 {
+      padding-top: 20px;
+      font-size: 22px;
+      padding-bottom: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 850px){
+  
+
+
+
+  #refer input {
+    height: 30px;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 30px;
+  }
+
+
+  #refer figure{
+    margin-top: 18px;
+  }
+
+  #refer h2 {
+    line-height: 30px;
+  }
+
+
+  #prizes .prize-number{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    left: calc(50% - 12px);
+  }
+}
+
+
+@media screen and (max-width: 800px){
+
+
+
+  .refer-left {
+    padding: 0;
+  }
+
+  #refer input {
+    height: 30px;
+    font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 30px;
+  }
+
+
+  #refer figure{
+    margin-top: 18px;
+  }
+
+  #refer h2 {
+    line-height: 30px;
+  }
+
+
+  #prizes .prize-number{
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    left: calc(50% - 13px);
+  }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+  #refer input {
+    height: 28px;
+    font-size: 17px;
+    margin-top: 5px;
+    line-height: 28px;
+  }
+
+
+  #refer p{
+    line-height: 1.15;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+
+  #reinforcement p{
+    text-align: center;
+  }
+
+  #copy h1, #copy h3, #refer p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #refer input{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px; 
+  }
+
+  #refer p {
+    font-size: 17px;
+  }
+
+  #refer h1 {
+    font-size: 30px;
+    margin: 15px auto 20px;
+  }
+
+
+}
+
+@media screen and (max-width: 600px){
+  .cover {
+    padding: 0 5px;
+  }
+
+    .cover-heading {
+    font-size: 5vw;
+  }
+
+    #new_user {
+  }
+
+    #new_user input {
+    font-size: 20px;
+  }
+
+    #new_user .user_email {
+    margin-right: -4px;
+    
+  }
+
+    #new_user .submit {
+    min-width: 80px;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+    #new_user .user_email {
+    width: 60%;
+  }
+
+    #new_user .submit {
+    width: 40%;
+  }
+
+  #prizes{
+  	margin: 100px 20px;
+  }
+
+
+
+}
+
+
+
+@media screen and (max-width: 450px){
+     #new_user input {
+      font-size: 18px !important;
+  }
+
+    .cover-heading {
+    font-size: 30px;
+  }
+
+    #new_user {
+    width: 100%;
+  } 
+
+    #new_user .user_email {
+    width: 55%;
+  }
+
+    #new_user .submit {
+    width: 45%;
+  }
+
+  .cover-title {
+  	font-size: 36px;
+  }
+
+  .cover-subtitle {
+    font-size: 18px;
+  }
+
+}
+
+
+@media screen and (max-width: 360px){
+    .cover-heading {
+    font-size: 25px;
+  }
+  
+    #new_user .submit {
+      min-width: 60px;
+  }
+
+  #refer figcaption p {
+    font-size: 14px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 320px){
+    #new_user input {
+      font-size: 16px !important;
+  }
+
+    #new_user .user_email {
+   width: 55%;
+  }
+
+    #new_user .submit {
+    width: 45%;
+  }
+
+
+}
+
+@media screen and (max-width: 300px){
+
+	#new_user .btn{
+		margin-left: auto;
+	}
+
+    #new_user .form-group{
+    width: 100%;
+  }
+
+    #new_user .submit{
+    margin-top: -15px;
+  }
+
+    .cover-title {
+  	font-size: 30px;
+  }
+  
+  .cover-subtitle {
+    font-size: 16px;
+  }
+
+    #new_user input {
+      width: 100% !important;
+      font-size: 18px !important;
+  }
 }
