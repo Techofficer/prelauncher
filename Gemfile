@@ -36,6 +36,7 @@ gem 'delayed_job_active_record'
 # Load twitter bootstrap CSS, JavaSript files
 gem 'bootstrap-sass'
 
+gem 'rails_12factor', group: :production
 
 # Font-Awesome web fonts and stylesheets http://fortawesome.github.io/Font-Awesome/icons/
 gem "font-awesome-rails"
