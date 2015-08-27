@@ -1,4 +1,4 @@
-#refer{style: "background: url(#{asset_url(Setting.additional_image.url)});"}
+#refer{style: "background: #{Setting.additional_image.present? ? 'url(' + asset_url(Setting.additional_image.url) + ');' : 'auto'}"}
 	.col-md-5.col-md-offset-1.col-sm-6.hidden-xs.refer-left
 	.col-md-5.col-sm-6.col-xs-12
 		#copy
