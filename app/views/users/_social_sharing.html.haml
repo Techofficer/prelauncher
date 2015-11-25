@@ -1,0 +1,23 @@
+#social-sharing
+	%ul.contact-socials.clearfix
+		%li
+			%a.foo_social.ico-facebook{:href => @user.social_url("facebook"), target: "_blank"}
+				%i.fa.fa-facebook-official 
+		%li
+			%a.foo_social.ico-twitter{:href => @user.social_url("twitter"), target: "_blank"}
+				%i.fa.fa-twitter
+		%li
+			%a.foo_social.ico-gplus{:href => @user.social_url("google_plus"), target: "_blank"}
+				%i.fa.fa-google-plus
+
+		%li
+			%a.foo_social.ico-linkedin{:href => @user.social_url("linkedin"), target: "_blank"}
+				%i.fa.fa-linkedin
+
+		%li
+			%a.foo_social.ico-pinterest{:href => @user.social_url("pinterest"), target: "_blank"}
+				%i.fa.fa-pinterest
+
+		%li
+			%a.foo_social.ico-mail{:href => "mailto:?&subject=#{Setting.sharing[:email_subject]}&body=#{Setting.sharing[:email_message] + " " + @user.referral_url(root_url)}", target: "_blank"}
+				%i.fa.fa-envelope

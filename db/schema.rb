@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150713071809) do
+ActiveRecord::Schema.define(version: 20151125171932) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,8 +68,32 @@ ActiveRecord::Schema.define(version: 20150713071809) do
     t.string   "additional_image_content_type"
     t.integer  "additional_image_file_size"
     t.datetime "additional_image_updated_at"
-    t.string   "status",                        default: "active"
+    t.string   "status",                         default: "active"
+    t.string   "pinterest_image_file_name"
+    t.string   "pinterest_image_content_type"
+    t.integer  "pinterest_image_file_size"
+    t.datetime "pinterest_image_updated_at"
+    t.string   "twitter_image_file_name"
+    t.string   "twitter_image_content_type"
+    t.integer  "twitter_image_file_size"
+    t.datetime "twitter_image_updated_at"
+    t.string   "pinterest_description"
+    t.string   "linkedin_title"
+    t.string   "linkedin_message"
+    t.string   "google_plus_image_file_name"
+    t.string   "google_plus_image_content_type"
+    t.integer  "google_plus_image_file_size"
+    t.datetime "google_plus_image_updated_at"
   end
+
+  create_table "shares", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "social_network"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "shares", ["user_id"], name: "index_shares_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",         null: false

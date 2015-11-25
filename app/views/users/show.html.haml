@@ -1,4 +1,4 @@
-#refer{style: "background: #{Setting.additional_image.present? ? 'url(' + asset_url(Setting.additional_image.url) + ');' : 'auto'}"}
+#refer{style: "background-image: #{Setting.additional_image.present? ? 'url(' + asset_url(Setting.additional_image.url) + ');' : 'auto'}"}
 	.col-md-5.col-md-offset-1.col-sm-6.hidden-xs.refer-left
 	.col-md-5.col-sm-6.col-xs-12
 		#copy
@@ -8,17 +8,7 @@
 		%input.form-control{value: "#{@user.referral_url(root_url)}"}
 		%p Share your unique link via emails or social networks and earn prizes for each friend who sign up.
 
-		#social-sharing
-			%ul.contact-socials.clearfix
-				%li
-					%a.foo_social.ico-facebook{:href => "https://www.facebook.com/sharer/sharer.php?u=#{@user.referral_url(root_url)}&title=Morgans", target: "_blank"}
-						%i.fa.fa-facebook-official 
-				%li
-					%a.foo_social.ico-twitter{:href => "https://twitter.com/intent/tweet?text=#{URI.escape(Setting.sharing[:twitter_message])}&url=#{@user.referral_url(root_url)}", target: "_blank"}
-						%i.fa.fa-twitter
-				%li
-					%a.foo_social.ico-mail{:href => "mailto:?&subject=#{Setting.sharing[:email_subject]}&body=#{Setting.sharing[:email_message] + " " + @user.referral_url(root_url)}", target: "_blank"}
-						%i.fa.fa-envelope
+		= render partial: "social_sharing"
 
 
 %aside.text-center

@@ -189,6 +189,24 @@
 	 pacity: 0.8;
 }
 
+.ico-pinterest{
+    color: #bd081c;
+}
+
+.ico-pinterest:hover, .ico-pinterest:focus{
+    color: #bd081c;
+  opacity: 0.8;
+}
+
+.ico-gplus{
+    color: #d34836;
+}
+
+.ico-gplus:hover, .ico-gplus:focus{
+    color:  #d34836;
+    opacity:0.8
+}
+
 .ico-mail {
     color: #25A3DC;
 }
@@ -266,12 +284,6 @@ aside h4{
   }
 
 
-  #prizes .prize-number{
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    left: calc(50% - 12px);
-  }
 }
 
 
@@ -298,14 +310,6 @@ aside h4{
 
   #refer h2 {
     line-height: 30px;
-  }
-
-
-  #prizes .prize-number{
-    width: 26px;
-    height: 26px;
-    line-height: 26px;
-    left: calc(50% - 13px);
   }
 
 
@@ -433,16 +437,29 @@ aside h4{
     font-size: 18px;
   }
 
+  .contact-socials li {
+    padding: 0px 10px;
+  }
+
 }
 
 
 @media screen and (max-width: 360px){
+
+  #refer h1 {
+    font-size: 27px;
+  }
+
     .cover-heading {
     font-size: 25px;
   }
   
     #new_user .submit {
       min-width: 60px;
+  }
+
+  #refer p {
+    font-size: 15px;
   }
 
   #refer figcaption p {
@@ -466,10 +483,22 @@ aside h4{
     width: 45%;
   }
 
+  .contact-socials i.fa {
+      font-size: 25px;
+  }
+
 
 }
 
 @media screen and (max-width: 300px){
+
+    .contact-socials li {
+      padding: 0 5px;
+  }
+
+  .contact-socials i.fa {
+      font-size: 22px;
+  }
 
 	#new_user .btn{
 		margin-left: auto;

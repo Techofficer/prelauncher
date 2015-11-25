@@ -4,6 +4,8 @@
 
 %link{:href => asset_path('favicon.ico'), :rel => "shortcut icon", :type => "image/x-icon"}/
 %link{:href => asset_path('favicon.ico'), :rel => "apple-touch-icon", :type => "image/jpeg"}/
+
+// Facebook
 %meta{:content => "#{Setting.sharing[:facebook_title]}", :property => "og:title"}/
 %meta{:content => "#{Setting.sharing[:facebook_message]}", :property => "og:description"}/
 
@@ -12,12 +14,25 @@
 	%meta{:content => "570", :property => "og:image:width"}/
 	%meta{:content => "300", :property => "og:image:height"}/
 
-
 - if controller_name != "users"
 	%meta{:content => (params[:ref] ? root_url + "users/" + params[:ref] : root_url), :property => "og:url"}/
 
 - else
 	%meta{:content => request.original_url, :property => "og:url"}/
 
+// Google +
+%meta{:content => Setting.sharing["google_plus_title"], :itemprop => "name"}/
+%meta{:content => Setting.sharing["google_plus_message"], :itemprop => "description"}/
+- if Setting.google_plus_image.present?
+	%meta{:content => root_url + Setting.google_plus_image.url, :itemprop => "image"}/
+
+
+%meta{:content => "summary_large_image", :name => "twitter:card"}/
+%meta{:content => "@Prelaunchr", :name => "twitter:site"}/
+%meta{:content => "Prelauncher", :name => "twitter:title"}/
+%meta{:content => Setting.sharing["twitter_message"], :name => "twitter:description"}/
+%meta{:content => root_url, :name => "twitter:domain"}/
+- if Setting.twitter_image.present?
+	%meta{:content => root_url + Setting.twitter_image.url, :name => "twitter:image"}/
 
 %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}

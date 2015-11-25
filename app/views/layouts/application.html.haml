@@ -1,11 +1,15 @@
 !!!
-%html
+%html{:itemscope => "", :itemtype => "http://schema.org/Article"}
   %head
 
     = csrf_meta_tags
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = render "layouts/meta"
+
+    :css
+      #prizes .prize {width: #{100.fdiv(Prize.all.count)}%;}
+      @media screen and (max-width: 767px){#prizes .prize {width: 100%;}}
 
   %body
     %section#content-wrapper

@@ -1,11 +1,13 @@
 class User < ActiveRecord::Base
 	belongs_to :referrer, class_name: "User", foreign_key: :referrer_id
     has_many :referrals, class_name: "User", foreign_key: :referrer_id
+    has_many :shares
 
     validates :email, uniqueness: true, format: { with: Devise::email_regexp, message: "Invalid email format." }, presence: true
-    #validates :ip_address, presence: true, uniqueness: true
+    validates :ip_address, presence: true, uniqueness: true
 
     before_create :set_referral_code
+    before_create :add_user_to_mailchimp
     after_create :welcome_email
 
     def prize
@@ -48,6 +50,10 @@ class User < ActiveRecord::Base
         referrals.count
     end
 
+    def social_url(social_network)
+        "/users/#{referral_code}/shares?share%5Bsocial_network%5D=#{social_network}"
+    end
+
     def user_url(root_url)
         root_url + "users/" + referral_code
     end
@@ -72,6 +78,23 @@ class User < ActiveRecord::Base
     end
 
     private
+
+    def mailchimp_object
+        Gibbon::Request.new(api_key: Setting::MAILCHIMP_API_KEY)
+    end
+
+    def add_user_to_mailchimp
+        delay.mailchimp_subscribe if Setting::MAILCHIMP_API_KEY && Setting::MAILCHIMP_LIST_ID
+    end
+
+    def mailchimp_subscribe
+        begin
+            contact = mailchimp_object.lists(Setting::MAILCHIMP_LIST_ID).members.create(body: {email_address: email, status: "subscribed"})
+        rescue Gibbon::MailChimpError => ex
+            print ex.body
+        end
+    end
+
 
     def set_referral_code
     	self.referral_code = generate_referral_code

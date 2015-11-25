@@ -16,6 +16,10 @@
     background: #2ECC71 none repeat scroll 0% 0%;
 }
 
+#prizes .prize-number > span{
+  display: none;
+}
+
 #prizes .prize {
     position: relative;
     float: left;
@@ -77,6 +81,7 @@
 	margin-bottom: 20px;
 	height: auto;
 	text-align: center;
+    display: inline-block;
 }
 
 #footer p{
@@ -93,4 +98,47 @@
     color: #333;
     font-weight: 400;
     font-family: Lato;
+}
+
+@media screen and (max-width: 767px){
+    #prizes .prize-number {
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        left: calc(50% - 45px);
+        top: -55px !important;
+        font-size: 14px;
+    }
+
+
+    #prizes .prize-number > span{
+        display: inline;
+    }
+
+    #prizes img{
+      display: block;
+      position: static;
+    }
+
+    #prizes .prize:first-child{
+        margin-left: 0;
+    }
+
+
+
+    #prizes{
+      margin-bottom: 0;
+    }
+
+    #prizes .prize{
+      width: 100%;
+      margin-top: 90px;
+    }
+
+    #prizes {
+        margin: 50px 20px;
+      width: calc(100% - 40px);
+    }
+
+
 }

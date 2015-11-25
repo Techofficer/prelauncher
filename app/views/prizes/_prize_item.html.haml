@@ -1,7 +1,9 @@
 - achieved = @user.achieved(prize)
 
-.prize{style: "width: #{100.fdiv(Prize.all.count)}%;", class: "prize #{'active-prize' if achieved}"}
-	%span.prize-number= prize.number_of_referrals
+.prize{class: "prize #{'active-prize' if achieved}"}
+	%span.prize-number
+		= prize.number_of_referrals
+		%span friends
 	%p.prize-name
 		= prize.name
 
