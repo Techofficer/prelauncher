@@ -19,6 +19,7 @@
 - if Prize.all.any?
 	%section#prizes
 		.progressbar{style: "width: #{@user.progress * 100}%"}
+			.progress-box
 		= render partial: "prizes/prize_item", collection: Prize.all.order("number_of_referrals asc"), as: :prize
 
 %footer#footer

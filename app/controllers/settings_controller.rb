@@ -30,7 +30,7 @@ class SettingsController < ApplicationController
 	private
 
 	def setting_params
-    	params.require(:setting).permit(:facebook_title, :facebook_image, :facebook_message, :twitter_message, :email_message, :email_subject, :cover_image, :additional_image)
+ 		params.require(:setting).permit(:facebook_title, :facebook_image, :facebook_message, :twitter_message, :email_message, :email_subject, :cover_image, :additional_image, :linkedin_message, :linkedin_title, :pinterest_image, :pinterest_description, :google_plus_image, :twitter_image)
   	end 
 
 end

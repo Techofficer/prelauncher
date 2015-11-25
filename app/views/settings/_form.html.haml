@@ -13,12 +13,30 @@
 	.form-group.form-group-sm
 		.col-sm-4
 			= f.input :twitter_message, as: :string, label: "Message", placeholder: "Message", required: false
+			= f.input :twitter_image, as: :file, label: "Twitter image"
 	%legend Facebook
 	.form-group.form-group-sm
 		.col-sm-4
 			= f.input :facebook_message, as: :string, label: "Message", placeholder: "Message", required: false
 			= f.input :facebook_title, as: :string, label: "Title", placeholder: "Title", required: false
 			= f.input :facebook_image, as: :file, label: "Facebook image"
+
+	%legend Google+
+	.form-group.form-group-sm
+		.col-sm-4
+			= f.input :google_plus_image, as: :file, label: "Google+ image"
+
+	%legend Pinterest	
+	.form-group.form-group-sm
+		.col-sm-4
+			= f.input :pinterest_description, as: :string, label: "Message", placeholder: "Message", required: false
+			= f.input :pinterest_image, as: :file, label: "Pinterest image"
+
+	%legend LinkedIn	
+	.form-group.form-group-sm
+		.col-sm-4
+			= f.input :linkedin_title, as: :string, label: "Title", placeholder: "Title", required: false
+			= f.input :linkedin_message, as: :string, label: "Message", placeholder: "Message", required: false
 	%legend Email
 	.form-group.form-group-sm
 		.col-sm-4
