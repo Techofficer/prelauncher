@@ -7,11 +7,11 @@ class UsersController < ApplicationController
 
 
 	def index
-		@users = User.all
+		@users = User.all.order("created_at desc").paginate(:page => params[:page], :per_page => 100)
 
 		respond_to do |format|
 	    	format.html {render layout: "dashboard"}
-	    	format.csv { send_data @users.as_csv }
+	    	format.csv { send_data User.all.as_csv }
     	end 
 	end
 
@@ -52,7 +52,7 @@ class UsersController < ApplicationController
 	        end
 	    else
 			respond_to do |format|
-	            format.html {redirect_to new_user_path, alert: "Subscribing multiple emails is not allowed."}
+	            format.html {redirect_to root_path, alert: "Subscribing multiple emails is not allowed."}
 	        end
 	    end
 	end

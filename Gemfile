@@ -42,6 +42,9 @@ gem 'rails_12factor', group: :production
 gem "font-awesome-rails"
 gem "paperclip"
 
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-bootstrap'
+
 group :development, :test do
 
 end

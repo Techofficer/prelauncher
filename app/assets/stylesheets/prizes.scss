@@ -81,7 +81,7 @@
     margin-right:auto;
 }
 
-#prizes .prize:hover img{
+#prizes .prize:hover img, #prizes .prize:focus img, #prizes .prize:active img{
     display: block;
 }
 
