@@ -70,8 +70,13 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.5.2)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
     font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
+    gibbon (2.0.0)
+      faraday (>= 0.9.1)
+      multi_json (>= 1.11.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     haml (4.0.6)
@@ -102,6 +107,8 @@ GEM
     mimemagic (0.3.0)
     mini_portile (0.6.2)
     minitest (5.7.0)
+    multi_json (1.11.2)
+    multipart-post (2.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -197,6 +204,7 @@ DEPENDENCIES
   delayed_job_active_record
   devise
   font-awesome-rails
+  gibbon
   haml-rails
   jquery-rails
   paperclip
