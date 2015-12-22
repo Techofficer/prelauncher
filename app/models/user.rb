@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
     validates :ip_address, presence: true, uniqueness: true
 
     before_create :set_referral_code
-    before_create :add_user_to_mailchimp
+    after_create :add_user_to_mailchimp
     after_create :welcome_email
 
     def prize
