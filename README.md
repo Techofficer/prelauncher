@@ -29,6 +29,7 @@ Welcome emails are sent to users after they submit email addresses.
 ```sh
 $ git clone https://github.com/Techofficer/prelauncher.git prelauncher
 $ cd prelauncher
+$ bundle install
 $ bundle exec rake db:create db:schema:load db:seed
 $ rails s
 ```
