@@ -12,6 +12,12 @@
       @media screen and (max-width: 767px){#prizes .prize {width: 100%;}}
 
   %body
+    - if flash[:notice]
+      .alert.alert-success{role: "alert"}
+        = flash[:notice]
+    - if flash[:alert]
+      .alert.alert-danger{role: "alert"}
+        = flash[:alert]
     %section#content-wrapper
 
       %main#content

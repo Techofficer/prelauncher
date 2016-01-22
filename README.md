@@ -14,7 +14,7 @@ Users can share their unique referral links in Facebook, Twitter, or by Email.
 ### IP blocking
 By default, it's forbiden to submit more than 1 email from the same IP address.
 ### Mailchimp integration
-When user sign up, his email is automatically added to your Mailchimp account.
+When a new user signs up, his email is automatically added to your Mailchimp account.
 ### Automated emails
 Welcome emails are sent to users after they submit email addresses.
 ## New features
