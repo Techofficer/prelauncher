@@ -6,6 +6,8 @@ Rails 4 version of Harry's prelaunchr with updated design, comfortable control p
 
 Since there is a strong interest in Prelaunchr project, but creators of original repository do not have time to support issues, fixes, or pull requests, this Rails 4 project is designed to help owners of new e-commerce websites to easily start their prelaunch referral campaigns without the need to rewrite all source code.
 
+You can see how it actually works in sample heroku app that we created for you [https://prelaunch-campaigns.herokuapp.com](https://prelaunch-campaigns.herokuapp.com).
+
 ## Original features:
 ### Referral system
 For every user who submits the email address the unique sharable link is automatically generated. By sharing the link with friends, users have the opportunity to earn free product. The more friends sign up using their unique referral link, the bigger prize they earn.
