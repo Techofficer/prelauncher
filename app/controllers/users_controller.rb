@@ -48,7 +48,7 @@ class UsersController < ApplicationController
 		if @user.save
 			cookies[:user_id] = @user.id
 			respond_to do |format|
-	            format.html {redirect_to user_path(@user.referral_code), notice: "Thank you for singing up."}
+	            format.html {redirect_to user_path(@user.referral_code), notice: "Thank you for signing up."}
 	        end
 	    else
 			respond_to do |format|
