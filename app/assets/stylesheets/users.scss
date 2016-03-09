@@ -35,11 +35,11 @@
 	font-size: 20px;
 	color: #FFF;
 	font-weight: 400;
-	font-family: Lato;
 	max-width: 600px;
 	text-align: center;
 	margin: 50px auto;
 	text-transform: none;
+  line-height: 1.2;
 }
 
 #new_user {
@@ -71,7 +71,6 @@
     width: 100%;
     background-color: #4EC9ED;
     color: #FFF;
-    font-family: Lato;
     float: left;
     display: inline-block;
     margin-left: -5px;
@@ -81,7 +80,6 @@
 	font-size: 16px;
 	color: #FFF;
 	font-weight: 400;
-	font-family: Lato;
 	text-transform: none;
 	text-align: center;
 	margin: 0px auto;
@@ -107,7 +105,6 @@
 	font-size: 18px;
 	color: #FFF;
 	font-weight: 400;
-	font-family: Lato;
 	margin: 30px auto 0px 50px;
 	text-align: left;
 	width: auto;
@@ -118,7 +115,6 @@
 	font-size: 25px;
 	color: #1ABC9C;
 	font-weight: 800;
-	font-family: Lato;
 	margin: 5px auto 25px 50px;
 	text-align: left;
 	width: auto;
@@ -139,7 +135,6 @@
     font-size: 16px;
     color: #FFF;
     font-weight: 400;
-    font-family: Lato;
     margin: 0px auto 0px 50px;
     text-align: left;
     width: auto;
@@ -220,7 +215,6 @@ aside h4{
     font-size: 18px;
     color: #333;
     font-weight: 400;
-    font-family: Lato;
     margin-top: 0px;
     margin-bottom: 0px;
     text-transform: none;
