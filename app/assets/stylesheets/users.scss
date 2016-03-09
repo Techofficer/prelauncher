@@ -226,8 +226,17 @@ aside h4{
     text-transform: none;
 }
 
+.cover footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  color: white;  
+}
 
-
+.cover footer a {
+  color: white;
+  font-weight: 600;
+}
 
 @media screen and (max-width: 980px){
 
