@@ -48,7 +48,7 @@ If you'd like to contribute a feature or tests: Thanks! Post a [pull request](ht
 If you discover any bugs, feel free to [create an issue](https://github.com/Techofficer/prelauncher/issues) on GitHub. Please add as much information as possible to help us fixing the possible bug. We also encourage you to help even more by forking and sending us a pull request.
 
 ## License
-MIT License. Copyright 2016 Prelauncher. http://prelauncher.io
+MIT License. Copyright 2016 Prelauncher. http://prelauncher.info
 
 You are not granted rights or licenses to the trademarks of the Prelauncher, including without limitation the Prelauncher name or logo.
 
@@ -57,7 +57,7 @@ You are not granted rights or licenses to the trademarks of the Prelauncher, inc
 
 If you do not have programming skills, or you want some advanced features for your Prelaunch referral website, visit [Prelauncher.info](http://prelauncher.info) - prelaunch website builder which helps owners of new e-commerce websites to easily build a viral pre-launch website and start referral prelaunch campaign.
 ### Simple Web page builder
-Build a simple two-page microsite with our beautiful website builder, no coding skills needed! Choose a layout, begin customizing and be online in a couple of minutes! Take a look at [examples](http://prelauncher.info/examples) of prelaunch websites created with our website builder.  
+Build a simple two-page microsite with our beautiful website builder, no coding skills needed! Choose a layout, begin customizing and be online in a couple of minutes! 
 ### Integrations
 We offer simple integrations with 3 types of online services: Email Marketing Tools (Mailchimp, Constant Contact, GetResponse, and Aweber), Analytical Tools (Google Analytics or Segment), and Link Shortners (Bitly, Google Shortener).
 ### WordPress
@@ -72,6 +72,6 @@ You can easily install our [WordPress plugin](https://github.com/Techofficer/wor
 - ask users for additional data (name, phone number, shipping address, avatar)
 
 ## Custom development
-[Contact us](http://prelauncher.io) if you need custom features, integrations, or design for your Prelaunch website.
+[Contact us](http://prelauncher.info/contat) if you need custom features, integrations, or design for your Prelaunch website.
 
 
