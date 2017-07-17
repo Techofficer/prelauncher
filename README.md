@@ -70,6 +70,6 @@ You can easily install our [WordPress plugin](https://github.com/Techofficer/wor
 - ask users for additional data (name, phone number, shipping address, avatar)
 
 ## Custom development
-[Contact us](http://prelauncher.info/contat) if you need custom features, integrations, or design for your Prelaunch website.
+[Contact us](http://prelauncher.info/contact) if you need custom features, integrations, or design for your Prelaunch website.
 
 
