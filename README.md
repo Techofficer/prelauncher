@@ -33,10 +33,13 @@ $ bundle install
 $ bundle exec rake db:create db:schema:load db:seed
 $ rails s
 ```
-## Configuration
+## Configuration (in no particular order)
 - Change the default Admin user credentials in /db/seeds.rb
 - Go to localhost:3000/admins/sign_in and log in with Admin user credentials
 - Add MAILCHIMP_API_KEY and MAILCHIMP_LIST_ID in /app/models/setting.rb
+- Configure mail settings in /config/environments/production.rb. [See here for a guide on a Heroku/Sendgrid setup](https://devcenter.heroku.com/articles/sendgrid)
+- Configure the default email thats sent on signup, in app/views/user_mailer. You'll need to edit both files.
+- Set background images and other graphic in control panel.
 - Set the different prize levels and add social messages in control panel
 - Run rake secret to generate a new Rails secret_token and set it in /config/intializers/secret_token.rb (or in the RAILS_SECRET environment variable).
 
