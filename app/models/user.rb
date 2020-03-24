@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
-	belongs_to :referrer, class_name: "User", foreign_key: :referrer_id
+
+    # to create the VERY FIRST USER, 
+	belongs_to :referrer, class_name: "User", foreign_key: :referrer_id, optional: true
     has_many :referrals, class_name: "User", foreign_key: :referrer_id
     has_many :shares
 

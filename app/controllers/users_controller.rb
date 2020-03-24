@@ -42,6 +42,7 @@ class UsersController < ApplicationController
 	def create
 
 		@user = User.new(user_params)
+		puts "USER PARAMS: #{user_params}\n\n\n"
 		@user.referrer_id = session[:referrer_id] if session[:referrer_id].present?
 		@user.ip_address = request.ip
 
@@ -62,6 +63,7 @@ class UsersController < ApplicationController
 
 
 	def check_session
+		puts "check_session was called"
 		if cookies[:user_id] && User.where(id: cookies[:user_id]).any? && !current_admin
 			redirect_to user_path(User.find(cookies[:user_id]).referral_code)
 		end
@@ -84,8 +86,8 @@ class UsersController < ApplicationController
 	end
 
 	def user_params
-    	params.require(:user).permit(:email)
-  	end 
+  	params.require(:user).permit(:email)
+	end 
 
 
 end
