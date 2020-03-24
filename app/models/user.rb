@@ -1,10 +1,12 @@
 class User < ActiveRecord::Base
-	belongs_to :referrer, class_name: "User", foreign_key: :referrer_id
+
+    # to create the VERY FIRST USER, 
+	belongs_to :referrer, class_name: "User", foreign_key: :referrer_id, optional: true
     has_many :referrals, class_name: "User", foreign_key: :referrer_id
     has_many :shares
 
     validates :email, uniqueness: true, format: { with: Devise::email_regexp, message: "Invalid email format." }, presence: true
-    validates :ip_address, presence: true, uniqueness: true
+    # validates :ip_address, presence: true, uniqueness: true
 
     before_create :set_referral_code
     after_create :add_user_to_mailchimp
