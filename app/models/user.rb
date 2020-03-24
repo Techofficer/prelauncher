@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     has_many :shares
 
     validates :email, uniqueness: true, format: { with: Devise::email_regexp, message: "Invalid email format." }, presence: true
-    # validates :ip_address, presence: true, uniqueness: true
+    validates :ip_address, presence: true, uniqueness: true
 
     before_create :set_referral_code
     after_create :add_user_to_mailchimp
